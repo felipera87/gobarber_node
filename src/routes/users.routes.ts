@@ -34,6 +34,7 @@ usersRouter.patch(
   ensureAuthenticated,
   upload.single('avatar'),
   async (req, res) => {
+    console.log(req.file);
     return res.json({ ok: true });
   },
 );
