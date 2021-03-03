@@ -30,7 +30,6 @@ class CreateAppointmentService {
       throw new AppError('This appointment is already booked');
     }
 
-    // this method is not async because it doesn't save on database, just in local memory
     const appointment = await this.appointmentsRepository.create({
       provider_id,
       date: appointmentDate,
