@@ -27,12 +27,10 @@ class CreateAppointmentService {
     }
 
     // this method is not async because it doesn't save on database, just in local memory
-    const appointment = appointmentsRepository.create({
+    const appointment = await appointmentsRepository.create({
       provider_id,
       date: appointmentDate,
     });
-
-    await appointmentsRepository.save(appointment);
 
     return appointment;
   }
