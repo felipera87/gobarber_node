@@ -15,3 +15,13 @@ In case you already have the container:
 ```
 $ docker start gostack_postgres
 ```
+
+## Tests
+
+To run the tests:
+
+```
+$ yarn test
+```
+
+This will also create the coverage folder, you can check a friendly coverage report on `coverage/lcov-report/index.html`
