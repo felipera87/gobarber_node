@@ -2,7 +2,7 @@
 
 It is not something useful, it's purpose is just for study/practice only. It is the backend of GOBARBER project from the rocketseat bootcamp.
 
-## Start local database container for this project
+## Start local postgres database container for this project
 
 For the first time:
 
@@ -14,6 +14,20 @@ In case you already have the container:
 
 ```
 $ docker start gostack_postgres
+```
+
+## Start local mongodb database container for this project
+
+For the first time:
+
+```
+$ docker run --name gostack_mongodb -p 27017:27017 -d -t mongo
+```
+
+In case you already have the container:
+
+```
+$ docker start gostack_mongodb
 ```
 
 ## Tests
