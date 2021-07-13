@@ -30,6 +30,20 @@ In case you already have the container:
 $ docker start gostack_mongodb
 ```
 
+## Start local redis container for this project
+
+For the first time:
+
+```
+$ docker run --name gostack_redis -p 6379:6379 -d -t redis:alpine
+```
+
+In case you already have the container:
+
+```
+$ docker start gostack_redis
+```
+
 ## Tests
 
 To run the tests:
